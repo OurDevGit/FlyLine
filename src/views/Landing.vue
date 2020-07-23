@@ -22,14 +22,16 @@
                   Score the best airfare plus seamlessly manage your flights —
                   all from a single location.
                 </p>
-                <Button type="primary" @click="toggleOverlay">
-                  <div class="btn-send-content">
-                    Send app to your phone
-                    <img src="/images/icons/apple.svg" />
-                    +
-                    <img src="/images/icons/playstore.svg" />
-                  </div>
-                </Button>
+                <a href="/typeform">
+                  <Button type="primary">
+                    <div class="btn-send-content">
+                      Request Early Access
+                      <img src="/images/icons/apple.svg" />
+                      +
+                      <img src="/images/icons/playstore.svg" />
+                    </div>
+                  </Button>
+                </a>
               </div>
               <div class="cell small-6"></div>
             </section>
@@ -56,7 +58,9 @@
                   planning travel. Manage all your flights right in FlyLine,
                   from booking to seat selection.
                 </p>
-                <Button type="primary">How it works</Button>
+                <Button type="primary" @click="goTo('How it works')"
+                  >How it works</Button
+                >
               </div>
             </section>
           </Container>
@@ -82,7 +86,7 @@
                 on different airlines. Select fares offer cash back to use on
                 future travel.
               </p>
-              <Button type="primary" @click="goTo('How it works')"
+              <Button type="primary" @click="goTo('FareTypes')"
                 >Savings Explained</Button
               >
             </div>
@@ -90,7 +94,7 @@
           </section>
         </Container>
       </div>
-
+<!--
       <div class="full-width landing__wrapper landing__wrapper--4">
         <div class="top--line"></div>
         <div class="landing__section landing__section--4">
@@ -114,11 +118,11 @@
           </Container>
         </div>
       </div>
-
+-->
       <Container :padded="false">
         <SubFooter
-          titleOne="Sign Up for Free"
-          titleTwo="Download the App"
+          titleOne="Learn More"
+          titleTwo="Request Access"
           linkOne="Pricing"
           linkTwo="How it works"
         ></SubFooter>
@@ -178,7 +182,7 @@ export default {
     MobileNavbarLogo,
     MobileHomeContent,
     MobileFooter,
-    Construction
+    Construction,
   },
   data() {
     let construction = process.env.VUE_APP_CONSTRUCTION
@@ -187,7 +191,7 @@ export default {
     let constructionVisibility = ["true", "1", "on"].includes(construction);
     return {
       overlayVisibility: false,
-      constructionVisibility
+      constructionVisibility,
     };
   },
   methods: {
@@ -204,8 +208,8 @@ export default {
     },
     goTo(page) {
       this.$router.push({ name: page });
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss">

@@ -12,7 +12,7 @@ import HowItWorks from "@/views/HowItWorks";
 import FlyLine101 from "@/views/FlyLine101";
 import ConfirmBooking from "@/views/ConfirmBooking";
 import Terms from "@/views/Terms";
-
+import EarlyAccessForm from "@/views/EarlyAccessForm"
 import store from "../store";
 import Pricing from "@/views/Pricing";
 import Referral from "@/views/Referral";
@@ -95,7 +95,12 @@ const routes = [
     path: "/terms",
     name: "Terms",
     component: Terms
-  }
+  },
+  {
+    path: "/typeform",
+    name: "TypeForm",
+    component: EarlyAccessForm
+  },
 ];
 
 const router = new VueRouter({

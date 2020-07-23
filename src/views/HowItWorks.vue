@@ -87,8 +87,8 @@
     </Container>
 
     <SubFooter
-      titleOne="Download the App"
-      titleTwo="Learn More"
+      titleOne="Learn More"
+      titleTwo="Request Access"
       linkOne="How it works"
       linkTwo="Pricing"
     ></SubFooter>

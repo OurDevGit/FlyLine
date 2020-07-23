@@ -24,35 +24,35 @@ import Button from "@/components/atoms/Button.vue";
 export default {
   name: "SubFooter",
   components: {
-    Button
+    Button,
   },
   props: {
     titleOne: {
       type: String,
       required: true,
-      default: ""
+      default: "",
     },
     titleTwo: {
       type: String,
       required: true,
-      default: ""
+      default: "",
     },
     linkOne: {
       type: String,
       required: true,
-      default: ""
+      default: "",
     },
     linkeTwo: {
       type: String,
       required: true,
-      default: ""
-    }
+      default: "",
+    },
   },
   methods: {
     goTo(page) {
       this.$router.push({ name: page });
-    }
-  }
+    },
+  },
 };
 </script>
 

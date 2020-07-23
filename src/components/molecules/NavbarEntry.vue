@@ -1,8 +1,8 @@
 <template>
   <ul class="navbar__entry">
     <li>
-      <router-link to="/pricing" class="btn btn--primary"
-        >Download the App</router-link
+      <a href="/typeform" class="btn btn--primary"
+        >Request Early Access</a
       >
     </li>
   </ul>

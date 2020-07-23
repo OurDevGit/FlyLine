@@ -6,9 +6,6 @@
     <li>
       <router-link :to="{ name: 'FareTypes' }">Fare Types</router-link>
     </li>
-    <li>
-      <router-link :to="{ name: 'Pricing' }">Premium</router-link>
-    </li>
   </ul>
 </template>
 

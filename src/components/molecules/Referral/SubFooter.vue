@@ -12,8 +12,8 @@
       </h3>
     </div>
     <div class="hero__links">
-      <Button type="primary" @click="goTo('Pricing')">Download the App</Button>
-      <Button type="primary" @click="goTo('How it works')">Learn More</Button>
+      <Button type="primary" @click="goTo('Pricing')">Learn More</Button>
+      <Button type="primary" @click="goTo('How it works')">Request Access</Button>
     </div>
   </div>
 </template>
@@ -75,10 +75,11 @@ export default {
         > .btn {
           width: auto;
           height: auto;
-          padding: 0.8rem 1.6rem;
+          font-size: 1rem;
           box-shadow: none;
-          font-size: 0.7rem;
-          border-radius: 20px !important;
+          padding: 1.2rem 1.4rem;
+          border-radius: 2rem !important;
+          min-width: 11rem;
 
           &--outline {
             color: #ffffff;

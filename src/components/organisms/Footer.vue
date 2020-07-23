@@ -16,34 +16,35 @@
         <div class="sitemap">
           <h3 class="sitemap__title">Home</h3>
           <ul class="sitemap__links">
-            <li class="sitemap__link">How it Works</li>
-            <li class="sitemap__link">FlyLine Premium</li>
-            <li class="sitemap__link">Get Started</li>
+            <li class="sitemap__link"><a href="/how-it-works">Features</a></li>
+            <li class="sitemap__link"><a href="/faretypes">Fare Types</a></li>
+            <li class="sitemap__link">
+              <a href="/typeform">Request Early Accecss</a>
+            </li>
           </ul>
         </div>
         <div class="sitemap">
           <h3 class="sitemap__title">Product</h3>
           <ul class="sitemap__links">
-            <li class="sitemap__link">Download App</li>
-            <li class="sitemap__link">Different Fare Types</li>
-            <li class="sitemap__link">FlyLine Blog</li>
-            <li class="sitemap__link">Developer API</li>
+            <li class="sitemap__link"><a href="/referral">Affiliate Program</a></li>
+            <li class="sitemap__link"><a href="">FlyLine Blog</a></li>
+            <li class="sitemap__link"><a href="">Developer API</a></li>
           </ul>
         </div>
         <div class="sitemap">
           <h3 class="sitemap__title">Company</h3>
           <ul class="sitemap__links">
-            <li class="sitemap__link">About</li>
-            <li class="sitemap__link">FAQs</li>
-            <li class="sitemap__link">Support</li>
-            <li class="sitemap__link">Media Enquiries</li>
+            <li class="sitemap__link"><a href="">About</a></li>
+            <li class="sitemap__link"><a href="">FAQs</a></li>
+            <li class="sitemap__link"><a href="">Support</a></li>
+            <li class="sitemap__link"><a href="">Media Enquiries</a></li>
           </ul>
         </div>
         <div class="sitemap">
           <h3 class="sitemap__title">Legal</h3>
           <ul class="sitemap__links">
-            <li class="sitemap__link">Terms of Use</li>
-            <li class="sitemap__link">Privacy Policy</li>
+            <li class="sitemap__link"><a href='/terms'>Terms of Use</a></li>
+            <li class="sitemap__link"><a href=''>Privacy Policy</a></li>
           </ul>
         </div>
       </section>
@@ -91,8 +92,8 @@ import Container from "@/components/molecules/Container";
 export default {
   name: "Footer",
   components: {
-    Container
-  }
+    Container,
+  },
 };
 </script>
 
@@ -181,6 +182,9 @@ export default {
       font-family: "Gilroy-Medium";
       font-size: 0.8rem;
       padding-bottom: 0.5rem;
+      a {
+        color: black;
+      }
     }
   }
 }

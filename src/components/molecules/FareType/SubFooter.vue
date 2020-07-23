@@ -9,9 +9,9 @@
     </div>
     <div class="hero__links">
       <Button type="primary" @click="goTo('How it works')"
-        >Download the App</Button
+        >Learn More</Button
       >
-      <Button type="primary" @click="goTo('Pricing')">Learn More</Button>
+      <Button type="primary" @click="goTo('Pricing')">Request Access</Button>
     </div>
   </div>
 </template>
@@ -22,13 +22,13 @@ import Button from "@/components/atoms/Button.vue";
 export default {
   name: "SubFooter",
   components: {
-    Button
+    Button,
   },
   methods: {
     goTo(page) {
       this.$router.push({ name: page });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -72,9 +72,11 @@ export default {
         > .btn {
           width: auto;
           height: auto;
-          padding: 0.8rem 1.6rem;
-          font-size: 0.7rem;
+          font-size: 1rem;
           box-shadow: none;
+          padding: 1.2rem 1.4rem;
+          border-radius: 2rem !important;
+          min-width: 11rem;
 
           &--outline {
             color: #fff;
